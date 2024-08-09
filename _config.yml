@@ -86,31 +86,26 @@ content:
             * 티몬캐시 전환 서비스 UI 및 어드민 개발
             * 신규 PG사(나이스페이) 인증결제 및 차액정산 연동 - 주문 스냅샷 DB 전환
             * 티몬 주문, 결제, 클레임 업무 운영
-
     layout: list
     content:
       - layout: left
         title: 행복나래
-        # link: boringcompany.com
-        # link_text: boringcompany.com
         sub_title: IT팀 Manager
         caption: 2020.03 - 2022.04
         quote: >
           일 주문 10만건 B2B 구매 서비스 개발 및 운영
-        description: | # this will include new lines to allow paragraphs
-
-
+        description: |
+            * test
     layout: list
     content:
       - layout: left
         title: 아크릴
-        # link: boringcompany.com
-        # link_text: boringcompany.com
         sub_title: IT팀 주임연구원
         caption: 2018.09 - 2019.04
         quote: >
           인공지능 솔루션 데이터 수집용 웹 스크래퍼 및 대시보드 개발
-        description: | # this will include new lines to allow paragraphs
+        description: |
+            * test
             
 
   # - title: Education # Title for the section
