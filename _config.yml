@@ -124,10 +124,10 @@ content:
         title: 기타 운영 업무
         quote: >
         description: | # this will include new lines to allow paragraphs
-          * 금감원 및 카드사 100만건 이상 대용량 데이터 추출 대응
-          * 대량 환불 일괄 승인 처리 개발 및 대응
-          * 차액정산 미접수 대응
-          * 신규 테스트 환경(PRE-QA) 셋팅
+          * 티몬 금감원 및 카드사 100만건 이상 대용량 데이터 추출 대응
+          * 티몬 대량 환불 일괄 승인 처리 개발 및 대응
+          * 티몬 차액정산 미접수 대응
+          * 티몬 신규 테스트 환경(PRE-QA) 셋팅
     
   - title: Skill # Title for the section
     layout: list # Type of content section (list/text)
