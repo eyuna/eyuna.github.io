@@ -74,7 +74,7 @@ content:
         sub_title: IT팀 Manager
         caption: 2020.03 - 2022.04
         quote: >
-          일 주문 10만건 B2B 구매 서비스 개발 및 운영
+          일 주문 10만건 SK 전 계열사 대상 B2B 구매 서비스 개발 및 운영
         description: |
             * 헝가리, 미국 지사 어드민 서비스 신규 개발
             * 국내 파트너 서비스 JSP -> Spring Boot 마이그레이션
@@ -119,9 +119,9 @@ content:
           * SK SCM 구매 서비스 배치 Crontab -> Spring Batch 이관
             - 오라클 스토어드 프로시저 실행 주체 변경
             - 배치 실행 로그 인입 및 배치 실패 시 알림 서비스 개발
+
       - layout: top-middle
-        name: 기타 운영 업무
-        link:
+        title: 기타 운영 업무
         quote: >
         description: | # this will include new lines to allow paragraphs
           * 금감원 및 카드사 100만건 이상 대용량 데이터 추출 대응
