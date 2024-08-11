@@ -49,28 +49,10 @@ github_username:  eyuna
 about_profile_image: images/tmp-img.jpg
 about_content: | # this will include new lines to allow paragraphs
   안녕하세요. 5년차 서버 백엔드 개발자 이유나입니다. <br> **MAU 400만 이커머스** 주문/결제/클레임 서비스, 일 주문 1만건 **SK하이닉스 자회사 B2B 구매** 서비스 개발자로 근무했습니다.
+  <br>MSA 기반의 대용량 트래픽 처리 분산 아키텍쳐 경험이 있고, 레거시 시스템 리팩토링 및 운영 경험으로 집요한 로직 파악과 적극적인 의사소통 스킬을 가지고 있습니다.
 
 
 content:
-  # - title: Projects # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: top-middle
-  #       title: Super awesome project
-  #       link: github.com/sproogen
-  #       # link_text: Project Website
-  #       additional_links:
-  #         - title:  sproogen/modern-resume-theme
-  #           icon: fab fa-github
-  #           url: github.com/sproogen/modern-resume-theme
-  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #         #   icon: fab fa-github
-  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-  #       quote: >
-  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  #       description: | # this will include new lines to allow paragraphs
-  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
   - title: Experience
     layout: list
     content:
@@ -79,11 +61,11 @@ content:
         sub_title: OPC Dev. Team Engineer
         caption: 2023.04 - 2024.08
         quote: >
-          MAU 400만, 일 주문 35만건 커머스 티몬 주문/결제/클레임 개발 및 운영
+          MAU 400만, 일 주문 35만건 커머스 티몬 서비스 개발 및 운영
         description: |
             * 외부연동딜 환불 정책 관리 API / DB설계 / 어드민 개발
             * 어뷰징 파트너 관리 API / DB설계 / 어드민 개발 
-            * 삼성전자 Trade-In 중고보상 서비스 API / UI 개발
+            * 삼성전자 Trade-In 중고보상 서비스 연동 API / UI 개발
             * 티몬캐시 전환 서비스 어드민 / UI 개발
             * 신규 PG사(나이스페이) 인증결제 및 차액정산 연동
             * 티몬 주문, 결제, 클레임 업무 운영
@@ -96,8 +78,8 @@ content:
         description: |
             * 헝가리, 미국 지사 어드민 서비스 신규 개발
             * 국내 파트너 서비스 JSP -> Spring Boot 마이그레이션
-            * 배치 100여개 Crontab -> Spring Batch 개선 
-            * SCM 하이닉스/협력사 서비스 운영 및 개발
+            * 배치 100여개 Crontab -> Spring Batch 이관
+            * SCM SK하이닉스/협력사 서비스 운영 및 개발
       - layout: left
         title: 아크릴
         sub_title: IT팀 주임연구원
@@ -106,12 +88,52 @@ content:
           인공지능 솔루션 데이터 수집 개발 및 운영
         description: |
             * Python 웹 스크래퍼, 대시보드 개발
+  - title: 역량
+    layout: list
+    content:
+      - layout: top-middle
+        title: 시스템 개발 및 개선
+        quote: >
+        description: |
+          * 일 주문 35만건 티몬 주문, 결제 시스템 API 개발 및 운영
+          * 티몬 신규 PG사(나이스페이) 연동
+            - 전략 패턴을 사용한 인증결제/차액정산 서비스 구현체 개발
+            - 주문/인증/인증완료/승인/승인취소 도메인 로직 파악 및 개발
+            - 차액정산 SFTP 서버 계정 관리 용도 DB 설계 및 조회/수정 어드민 개발
+            - 차액정산 배치 수행 중 SFTP 로그인 실패 시 메일링 이벤트 pub/sub 개발
+          * 티몬캐시 전환 서비스 어드민 개발
+            - 연동사 에러, 내부 시스템 에러 등의 다양한 예외 처리를 위한 ResponseErrorHandler 추가로 응답 일관성 개선
+          * 티몬 환급 정산 미반영 PG 데이터 일괄 처리 Batch 개발
+          * 티몬 주문서 내 정적 데이터(무이자 할부) 캐싱 처리로 응답 속도 개선
+          * SK SCM 구매 시스템 헝가리, 미국 지사 어드민 개발
 
+      - layout: top-middle
+        title: 레거시 시스템 리팩토링
+        quote: >
+        description: | # this will include new lines to allow paragraphs
+          * 티몬 딜 정보 DB 분리에 따른 주문 스냅샷 생성 및 쿼리 변경/개선
+            - 일부 쿼리 내에 로직 분리 후 애플리케이션 이관
+            - Slow Query 쿼리 플랜 확인하여 인덱스 조건절 추가
+          * SK SCM 구매 파트너 시스템 JSP -> Spring Boot 마이그레이션
+            - 일부 페이지 이관
+          * SK SCM 구매 서비스 배치 Crontab -> Spring Batch 이관
+            - 오라클 스토어드 프로시저 실행 주체 변경
+            - 배치 실행 로그 인입 및 배치 실패 시 알림 서비스 개발
+      - layout: top-middle
+        name: 기타 운영 업무
+        link:
+        quote: >
+        description: | # this will include new lines to allow paragraphs
+          * 금감원 및 카드사 100만건 이상 대용량 데이터 추출 대응
+          * 대량 환불 일괄 승인 처리 개발 및 대응
+          * 차액정산 미접수 대응
+          * 신규 테스트 환경(PRE-QA) 셋팅
+    
   - title: Skill # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        name: Backend
+        title: Backend
         description: | # this will include new lines to allow paragraphs
           * Java, Python
           * Spring Boot, Spring MVC, Spring Batch, Spring Security, Flask
@@ -120,26 +142,15 @@ content:
           * Junit4/5, Mockito
           * Gradle, Maven
       - layout: left
-        name: DevOps
+        title: DevOps
         description: | # this will include new lines to allow paragraphs
           * Jenkins
           * Nginx, Tomcat
           * Kibana, Datadog
       - layout: left
-        name: Frontend
+        title: Frontend
         description: | # this will include new lines to allow paragraphs
           * JavaScript, React
-  # - title: A Little More About Me
-  #   layout: text
-  #   content: | # this will include new lines to allow paragraphs
-  #     Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-  #     - Rock climbing
-  #     - Gaming
-  #     - Knitting
-  #     - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-  #     Look at this cool image  
-  #     ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
