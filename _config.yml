@@ -87,7 +87,8 @@ content:
         quote: >
           인공지능 솔루션 데이터 수집 개발 및 운영
         description: |
-            * Python 웹 스크래퍼, 대시보드 개발
+            * Python 웹 스크래퍼 개발
+            * 20여개 웹 스크래퍼 서버 실행/중지 기능 대시보드 개발
   - title: 역량
     layout: list
     content:
